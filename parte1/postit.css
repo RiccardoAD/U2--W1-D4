@@ -12,10 +12,9 @@ body {
   section {
     background-color: #666;
     display: flex;
-    align-items: flex-start;
-    align-content: flex-start;
-    justify-content: space-evenly;
     flex-wrap: wrap;
+    justify-content: space-evenly;
+   align-items: center;
     min-height: 100vh;
   }
 
@@ -25,8 +24,8 @@ body {
     height: 210px;
     padding: 1rem;
     box-shadow: 0px 10px 4px -3px rgb(0, 0,0,0.5);
-    
-    animation: slap-in 2s;
+    opacity: 0;
+    animation: slap 2s forwards ;
 }
 section div h2{
     margin-top: 3rem;
@@ -97,27 +96,29 @@ section div:hover{
     animation-delay: 2.6s;
   }
 
-  @keyframes slap-in {
-    0% {
+  @keyframes slap {
+    from {
       opacity: 0;
       transform: scale(10);
     }
     50% {
       opacity: 0;
-      transform: scale(10);
+      transform: scale(6);
     }
   
     55% {
       opacity: 1;
-      transform: scale(1.1);
+      transform: scale(4);
     }
   
     65% {
       opacity: 1;
-      transform: scale(0.9);
+      transform: scale(2);
     }
-    70% {
+    to {
       opacity: 1;
-      transform: scale(1);
+      
     }
+    
+
   }
