@@ -1,0 +1,123 @@
+/* RULES */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body {
+    font: 2rem "Indie Flower";
+    overflow-x: hidden;
+}
+/* MAIN */
+  section {
+    background-color: #666;
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    min-height: 100vh;
+  }
+
+  section div {
+    text-align: center;
+    width: 250px;
+    height: 210px;
+    padding: 1rem;
+    box-shadow: 0px 10px 4px -3px rgb(0, 0,0,0.5);
+    
+    animation: slap-in 2s;
+}
+section div h2{
+    margin-top: 3rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+section div p {
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+.post-1,
+.post-5,
+.post-7 {
+    background:rgb(253, 253,203) ;
+    background: linear-gradient(rgb(255, 255, 204) 0%, rgb(231, 231, 174) 75%, rgb(205 205 143) 100%);
+    transform: rotate(355deg);
+}
+.post-2,
+.post-4,
+.post-8 {
+    background: rgb(204, 255, 204);
+    background: linear-gradient(rgb(204, 255, 204) 0%, rgb(184, 219, 184) 77%, rgb(146 180 146) 100%);
+    transform: rotate(5deg);
+}
+
+.post-3,
+.post-6 {
+    transform: rotate(352deg);
+    background: rgb(204, 204, 255);
+    background: linear-gradient(rgb(204, 204, 255) 0%, rgb(176, 176, 204) 75%, rgb(147 147 186) 100%);
+}
+
+section div:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+    box-shadow: 0px 10px 4px -3px rgb(0, 0,0,0.5);
+    z-index: 10;
+  }
+
+  section div:nth-child(1n) {
+    animation-delay: 0.3s;
+  }
+  
+  section div:nth-child(2n) {
+    animation-delay: 0.6s;
+  }
+  section div:nth-child(3n) {
+   
+    animation-delay: 0.9s;
+  } 
+  section div:nth-child(4n) {
+    animation-delay: 1.2s;
+  }
+  
+  section div:nth-child(5n) {
+    animation-delay: 1.6s;
+  }
+  
+  section div:nth-child(6n) {
+    animation-delay: 1.9s;
+  }
+  
+  section div:nth-child(7n) {
+    animation-delay: 2.3s;
+  }
+  
+  section div:nth-child(8n) {
+    animation-delay: 2.6s;
+  }
+
+  @keyframes slap-in {
+    0% {
+      opacity: 0;
+      transform: scale(10);
+    }
+    50% {
+      opacity: 0;
+      transform: scale(10);
+    }
+  
+    55% {
+      opacity: 1;
+      transform: scale(1.1);
+    }
+  
+    65% {
+      opacity: 1;
+      transform: scale(0.9);
+    }
+    70% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
