@@ -65,34 +65,34 @@ section div:hover{
     z-index: 10;
   }
 
-  section div:nth-child(1n) {
+  section div:nth-child(1) {
     animation-delay: 0.3s;
   }
   
-  section div:nth-child(2n) {
+  section div:nth-child(2) {
     animation-delay: 0.6s;
   }
-  section div:nth-child(3n) {
+  section div:nth-child(3) {
    
     animation-delay: 0.9s;
   } 
-  section div:nth-child(4n) {
+  section div:nth-child(4) {
     animation-delay: 1.2s;
   }
   
-  section div:nth-child(5n) {
+  section div:nth-child(5) {
     animation-delay: 1.6s;
   }
   
-  section div:nth-child(6n) {
+  section div:nth-child(6) {
     animation-delay: 1.9s;
   }
   
-  section div:nth-child(7n) {
-    animation-delay: 2.3s;
+  section div:nth-child(7) {
+    animation-delay: 2.2s;
   }
   
-  section div:nth-child(8n) {
+  section div:nth-child(8) {
     animation-delay: 2.6s;
   }
 
