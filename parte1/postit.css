@@ -25,7 +25,7 @@ body {
     padding: 1rem;
     box-shadow: 0px 10px 4px -3px rgb(0, 0,0,0.5);
     opacity: 0;
-    animation: slap 2s forwards ;
+    animation: slap 1.5s forwards ;
 }
 section div h2{
     margin-top: 3rem;
@@ -101,20 +101,7 @@ section div:hover{
       opacity: 0;
       transform: scale(10);
     }
-    50% {
-      opacity: 0;
-      transform: scale(6);
-    }
-  
-    55% {
-      opacity: 1;
-      transform: scale(4);
-    }
-  
-    65% {
-      opacity: 1;
-      transform: scale(2);
-    }
+    
     to {
       opacity: 1;
       
